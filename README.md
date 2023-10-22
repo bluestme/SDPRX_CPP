@@ -4,4 +4,7 @@ SDPRX is a statistical method for cross-population prediction of complex traits.
 # Install
 
 The SDPRX can be downloaded via
+```
+jsskkaska
+```
 
