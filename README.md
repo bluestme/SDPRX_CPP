@@ -5,6 +5,6 @@ SDPRX is a statistical method for cross-population prediction of complex traits.
 
 The SDPRX can be downloaded via
 ```
-jsskkaska
+git clone https://github.com/bluestme/SDPRX_CPP.git
 ```
-
+The SDPRX_CPP has been tested under both linux x86 and macOS arm environments but using different makefiles.
