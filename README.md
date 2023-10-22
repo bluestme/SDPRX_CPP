@@ -16,3 +16,18 @@ Installation of gsl library is necessary if SDPRX_CPP is run on the new MacBook 
 ```
 brew install gsl
 ```
+
+# Quickstart
+
+# Make the reference LD
+
+# Running SDPRX_CPP
+
+```
+SNP	A1	A2	BETA	P
+rs737657        A       G       -2.044  0.0409
+rs7086391       T       C       -2.257  0.024
+rs1983865       T       C       3.652   0.00026
+...
+```
+
