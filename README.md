@@ -18,11 +18,20 @@ brew install gsl
 ```
 
 # Quickstart
+SDPRX_CPP can be run from the command line. To see the full list of options, please type
+```
+./SDPRX
+```
+SDPRX provides two functions: 
+(1) Estimating and paritioning the reference LD matrix out of 2 population 
+(2) perform MCMC to estimate the posterior effect sizes for each SNP of 2 populations. We provide an example usage for the test dataset:
+
 
 # Make the reference LD
 
 # Running SDPRX_CPP
-
+## Summary Statistics
+The summary statistics should at least contain following columns with the same name (order of the column is not important).
 ```
 SNP	A1	A2	BETA	P
 rs737657        A       G       -2.044  0.0409
@@ -30,4 +39,7 @@ rs7086391       T       C       -2.257  0.024
 rs1983865       T       C       3.652   0.00026
 ...
 ```
+where SNP is the marker name, A1 is the effect allele, A2 is the alternative allele, BETA is the regression coefficient for quantitative traits or log odds ratio for binary traits, and P is the p value.
 
+# References
+Zhou G, Chen T, Zhao H. SDPRX: A statistical method for cross-population prediction of complex traits. Am J Hum Genet. 2023 Jan 5;110(1):13-22. doi: 10.1016/j.ajhg.2022.11.007.
