@@ -20,16 +20,37 @@ brew install gsl
 # Quickstart
 SDPRX_CPP can be run from the command line. To see the full list of options, please type
 ```
-./SDPRX
+./SDPRX -h
 ```
 SDPRX provides two functions: 
-(1) Estimating and paritioning the reference LD matrix out of 2 population 
-(2) perform MCMC to estimate the posterior effect sizes for each SNP of 2 populations. We provide an example usage for the test dataset:
+
+(1) Estimating and paritioning the reference LD matrix out of 2 population with their shared individuals
+
+(2) perform MCMC to estimate the posterior effect sizes for each SNP of 2 populations. 
 
 
 # Make the reference LD
 
 # Running SDPRX_CPP
+Important options for running mcmc are:
+- N1 (required): Sample size of the EUR summary statistics.
+- N2 (required): Sample size of the non-EUR summary statistics.
+- ss1 (required): Path to the EUR summary statistics.
+- ss2 (required): Path to the non-EUR summary statistics.
+- out1 (required) path to the output file for population 1 containing estimated effect sizes, end with .txt recommended
+- out2 (required) path to the output file for population 2 containing estimated effect sizes, end with .txt recommended
+- chr (required) chromsome to work on. Currently support 1-22. Recommend to run in parallel.
+- load_ld (required): Path to the referecence LD directory.
+- valid (required): Path to the bim file for the testing dataset, including the .bim suffix.
+- rho (required): Trans-ethnic genetic correlation output by PopCorn between 0 and 1. Default is 0.8.
+- force_shared (required): Whether to force sharing of effect sizes between populations. Default is True.
+- n_threads (optional): number of threads to use. Default is 1.
+
+An example to run the mcmc is
+```
+./SDPRX -mcmc -ref_dir /home/ww442/SDPRX/worktable0808/dataC -ss1 /home/ww442/SDPRX/worktable0808/dataC/input/SDPRX_EUR.txt -ss2 /home/ww442/SDPRX/worktable0808/dataC/input/SDPRX_EAS.txt -valid /home/ww442/SDPRX/worktable0808/dataC/Ukb_imp_v2.bim -N1 715 -N2 469 -out1 ./output1.txt -out2 ./output2.txt -chr 1
+```
+
 ## Summary Statistics
 The summary statistics should at least contain following columns with the same name (order of the column is not important).
 ```
