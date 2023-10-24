@@ -13,7 +13,7 @@ If you plan to run SDPR_CPP on a linux system with a modern intel processor, you
 
 If you want to compile SDPRX from the source for best performance, you need a C/C++ compiler like g++ (tested under version 4.8.5), GSL (version 2.60) and MKL library (version 2017). For convenience, we redistribute the compiled GSL and MKL building on our Intel Xeon Processors in the repo. To install, type `make`. If this version does not work, please report the error to the issue page. If the issue is related to GSL, you may want to download the source code of GSL and compile it yourself. For details about downloading and installing GSL, please refer to [this page](https://www.gnu.org/software/gsl/) and [this page](https://www.gnu.org/software/gsl/doc/html/usage.html#compiling-and-linking). A tutorial of installing gsl is given on [this page](https://coral.ise.lehigh.edu/jild13/2016/07/11/hello/). If you have other versions of MKL library, please refer to [this manual](https://www.intel.com/content/www/us/en/developer/tools/oneapi/onemkl-link-line-advisor.html) for linking advice. On AMD CPU, we recommend using OpenBLAS, please see [here](https://github.com/eldronzhou/SDPR/issues/3) for instructions.
 
-## Apple Silicon and arm architecture chips
+## Apple Silicon
 Installation of gsl library is necessary if SDPRX_CPP is run on the new MacBook with Apple Silicon, which should be installed via `brew`
 ```
 brew install gsl
