@@ -40,7 +40,7 @@ SDPRX provides two functions:
 # Make the reference LD
 The reference matrix can be obtained by running SDPRX_CPP on two populations via
 ```
-
+./SDPRX -make_ref -ref_prefix1 /path_to_the_EUR/eur_SNPmaf5 -ref_prefix2 /path_to_the_EAS/1000G_phase3_common_norel -chr 21 -ref_dir ./ld_mat
 ```
 
 # Running SDPRX_CPP
