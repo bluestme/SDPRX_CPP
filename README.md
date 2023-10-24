@@ -16,6 +16,11 @@ Installation of gsl library is necessary if SDPRX_CPP is run on the new MacBook 
 ```
 brew install gsl
 ```
+Then you may end the version implemented for Apple Silicon with Arm chip architechture.
+```
+cd ./SDPRX_CPP-Apple
+make
+```
 
 # Quickstart
 SDPRX_CPP can be run from the command line. To see the full list of options, please type
