@@ -816,7 +816,7 @@ void mcmc(const string &ref_path, const string &ss_path1,
 			gsl_blas_daxpy(state.eta/n_pst, state.beta2, \
 		    	samples.beta2);
 		}
-		if (j % 1 == 0)
+		if (j % 100 == 0)
 		{
 	    	state.compute_h2(dat1, dat2);
 	    	cout << j << " iter. h21: " << state.h21 * square(state.eta) << \
