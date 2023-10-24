@@ -38,6 +38,10 @@ SDPRX provides two functions:
 
 
 # Make the reference LD
+The reference matrix can be obtained by running SDPRX_CPP on two populations via
+```
+
+```
 
 # Running SDPRX_CPP
 Important options for running mcmc are:
@@ -58,7 +62,7 @@ An example to run the mcmc is
 ```
 ../SDPRX -mcmc -ref_dir test -ss1 test/SDPRX_EUR.txt -ss2 test/SDPRX_EAS.txt -valid test/Ukb_imp_v2.bim -N1 885541 -N2 116404 -out1 ./output1.txt -out2 ./output2.txt -chr 21
 ```
-using the test file provided
+using the test files provided
 
 ## Summary Statistics
 The summary statistics should at least contain following columns with the same name (order of the column is not important).
@@ -70,6 +74,13 @@ rs1983865       T       C       3.652   0.00026
 ...
 ```
 where SNP is the marker name, A1 is the effect allele, A2 is the alternative allele, BETA is the regression coefficient for quantitative traits or log odds ratio for binary traits, and P is the p value.
+
+# Output
+The output file can be further processed with [plink](https://www.cog-genomics.org/plink/1.9/score)
+```
+plink --bfile test/Ukb_imp_v2 --score output_2.txt header --out prs_output
+```
+where the validation file is provided and `output_2.txt` is regarded as the output file of population 2 (it could also be the output file of population 1).
 
 # References
 Zhou G, Chen T, Zhao H. SDPRX: A statistical method for cross-population prediction of complex traits. Am J Hum Genet. 2023 Jan 5;110(1):13-22. doi: 10.1016/j.ajhg.2022.11.007.
