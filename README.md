@@ -23,7 +23,7 @@ Then you may end the version implemented for Apple Silicon with Arm chip archite
 cd ./SDPRX_CPP-Apple
 make
 ```
-to install the package
+to install the package.
 
 # Quickstart
 SDPRX_CPP can be run from the command line. To see the full list of options, please type
@@ -56,8 +56,9 @@ Important options for running mcmc are:
 
 An example to run the mcmc is
 ```
-./SDPRX -mcmc -ref_dir /home/ww442/SDPRX/worktable0808/dataC -ss1 /home/ww442/SDPRX/worktable0808/dataC/input/SDPRX_EUR.txt -ss2 /home/ww442/SDPRX/worktable0808/dataC/input/SDPRX_EAS.txt -valid /home/ww442/SDPRX/worktable0808/dataC/Ukb_imp_v2.bim -N1 715 -N2 469 -out1 ./output1.txt -out2 ./output2.txt -chr 1
+../SDPRX -mcmc -ref_dir test -ss1 test/SDPRX_EUR.txt -ss2 test/SDPRX_EAS.txt -valid test/Ukb_imp_v2.bim -N1 885541 -N2 116404 -out1 ./output1.txt -out2 ./output2.txt -chr 21
 ```
+using the test file provided
 
 ## Summary Statistics
 The summary statistics should at least contain following columns with the same name (order of the column is not important).
