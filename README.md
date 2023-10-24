@@ -21,6 +21,7 @@ Then you may end the version implemented for Apple Silicon with Arm chip archite
 cd ./SDPRX_CPP-Apple
 make
 ```
+to install the package
 
 # Quickstart
 SDPRX_CPP can be run from the command line. To see the full list of options, please type
