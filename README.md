@@ -38,9 +38,9 @@ SDPRX provides two functions:
 
 
 # Make the reference LD
-The reference matrix can be obtained by running SDPRX_CPP on two populations via
+The reference matrix can be obtained by running SDPRX_CPP on two populations via [this link](https://drive.google.com/file/d/1FhPn7jsnlNLL6n5sJGsTtPDfoKfFC8k_/view). After unzipping the file, you can use the following command to make the LD matrix for your specified chromosome
 ```
-./SDPRX -make_ref -ref_prefix1 /path_to_the_EUR/eur_SNPmaf5 -ref_prefix2 /path_to_the_EAS/1000G_phase3_common_norel -chr 21 -ref_dir ./ld_mat
+./SDPRX -make_ref -ref_prefix1 /make_ref/eur_SNPmaf5 -ref_prefix2 /make_ref/1000G_phase3_common_norel -chr 21 -ref_dir ./ld_mat
 ```
 Note that population 1 and 2 should not be inversed when making the reference LD and running mcmc.
 
