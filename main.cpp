@@ -18,8 +18,8 @@ void print_use()
 	<< "Full list of options: " << endl << endl
 	<< "-make-ref estimate reference LD matrix." << endl << endl
 	<< "-mcmc perform MCMC." << endl << endl
-	<< " -ss1 (required for -make_ref) path to the summary statistics file for population 1. We recommend to follow our pipeline to clean up summary statistics by running munge_sumstats.py." << endl
-	<< " -ss2 (required for -make_ref) path to the summary statistics file for population 2. We recommend to follow our pipeline to clean up summary statistics by running munge_sumstats.py." << endl << endl
+	<< " -ss1 (required for -make_ref) path to the summary statistics file for population 1. " << endl
+	<< " -ss2 (required for -make_ref) path to the summary statistics file for population 2. " << endl << endl
 	<< " The summary statistics must have the following format (you can change the name of the header line): " << endl << endl  
 	<< " SNP	A1	A2	BETA	P" << endl 
 	<< " rs737657        A       G       -2.044  0.0409" << endl
