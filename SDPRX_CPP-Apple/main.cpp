@@ -14,7 +14,7 @@ void print_use()
 	<< "Example of estimating LD: " << endl 
 	<< "	SDPRX -make_ref -ref_prefix1 ./test/1kg -ref_prefix2 ./test/2kg -ref_dir1 ./test/ref1 -ref_dir2 ./test/ref2 -chr 1 -make_ref" << endl << endl
 	<< "Example of performing mcmc: " << endl 
-	<< "	SDPR -mcmc -ss1 ./test/ss/ss1.txt -ss2 ./test/ss/ss2.txt -ref_dir ./test/ref -chr 1 -out ./test/SDPR_out.txt" << endl << endl
+	<< "	./SDPRX -mcmc -ref_dir test -ss1 test/SDPRX_EUR.txt -ss2 test/SDPRX_EAS.txt -valid test/Ukb_imp_v2.bim -N1 885541 -N2 116404 -out1 ./output1.txt -out2 ./output2.txt -chr 21" << endl << endl
 	<< "Full list of options: " << endl << endl
 	<< "-make-ref estimate reference LD matrix." << endl << endl
 	<< "-mcmc perform MCMC." << endl << endl
