@@ -42,6 +42,7 @@ The reference matrix can be obtained by running SDPRX_CPP on two populations via
 ```
 ./SDPRX -make_ref -ref_prefix1 /path_to_the_EUR/eur_SNPmaf5 -ref_prefix2 /path_to_the_EAS/1000G_phase3_common_norel -chr 21 -ref_dir ./ld_mat
 ```
+Note that population 1 and 2 should not be inversed when making the reference LD and running mcmc.
 
 # Running SDPRX_CPP
 Important options for running mcmc are:
@@ -60,7 +61,7 @@ Important options for running mcmc are:
 
 An example to run the mcmc is
 ```
-../SDPRX -mcmc -ref_dir test -ss1 test/SDPRX_EUR.txt -ss2 test/SDPRX_EAS.txt -valid test/Ukb_imp_v2.bim -N1 885541 -N2 116404 -out1 ./output1.txt -out2 ./output2.txt -chr 21 -n_threads 3
+./SDPRX -mcmc -ref_dir test -ss1 test/SDPRX_EUR.txt -ss2 test/SDPRX_EAS.txt -valid test/Ukb_imp_v2.bim -N1 885541 -N2 116404 -out1 ./output1.txt -out2 ./output2.txt -chr 21 -n_threads 3
 ```
 using the test files provided. We recommend running the SDPRX using 3 threads. It is expected to finish within 45 minutes.
 
