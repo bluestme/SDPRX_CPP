@@ -18,8 +18,8 @@ void print_use()
 	<< "Full list of options: " << endl << endl
 	<< "-make-ref estimate reference LD matrix." << endl << endl
 	<< "-mcmc perform MCMC." << endl << endl
-	<< " -ss1 (required for -make_ref) path to the summary statistics file for population 1. We recommend to follow our pipeline to clean up summary statistics by running munge_sumstats.py." << endl
-	<< " -ss2 (required for -make_ref) path to the summary statistics file for population 2. We recommend to follow our pipeline to clean up summary statistics by running munge_sumstats.py." << endl << endl
+	<< " -ss1 (required for -make_ref) path to the summary statistics file for population 1. " << endl
+	<< " -ss2 (required for -make_ref) path to the summary statistics file for population 2. " << endl << endl
 	<< " The summary statistics must have the following format (you can change the name of the header line): " << endl << endl  
 	<< " SNP	A1	A2	BETA	P" << endl 
 	<< " rs737657        A       G       -2.044  0.0409" << endl
@@ -31,8 +31,8 @@ void print_use()
 	<< " -ref_prefix2 (required for -make_ref) path to the prefix of the bim file for the reference panel for population 2, not including the .bim suffix." << endl << endl
 	<< " -ref_dir (required) path to the directory that contains the reference LD information output by SDPRX, containing .snpInfo and .dat file." << endl << endl
 	<< " -valid (optional) path to the bim file for the testing dataset, including the .bim suffix." << endl << endl
-	<< " -out1 (required for -mcmc) path to the output file for population 1 containing estimated effect sizes." << endl
-	<< " -out2 (required for -mcmc) path to the output file for population 2 containing estimated effect sizes." << endl << endl
+	<< " -out1 (required for -mcmc) path to the output file for population 1 containing estimated effect sizes. The file will be in txt format" << endl
+	<< " -out2 (required for -mcmc) path to the output file for population 2 containing estimated effect sizes. The file will be in txt format" << endl << endl
 	<< " -chr (required) chromsome to work on. Currently support 1-22. Recommend to run in parallel." << endl << endl
 	<< " -N1 (required for -mcmc) GWAS sample size for population 1." << endl
 	<< " -N2 (required for -mcmc) GWAS sample size for population 2." << endl << endl
