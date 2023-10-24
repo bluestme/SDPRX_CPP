@@ -60,9 +60,9 @@ Important options for running mcmc are:
 
 An example to run the mcmc is
 ```
-../SDPRX -mcmc -ref_dir test -ss1 test/SDPRX_EUR.txt -ss2 test/SDPRX_EAS.txt -valid test/Ukb_imp_v2.bim -N1 885541 -N2 116404 -out1 ./output1.txt -out2 ./output2.txt -chr 21
+../SDPRX -mcmc -ref_dir test -ss1 test/SDPRX_EUR.txt -ss2 test/SDPRX_EAS.txt -valid test/Ukb_imp_v2.bim -N1 885541 -N2 116404 -out1 ./output1.txt -out2 ./output2.txt -chr 21 -n_threads 3
 ```
-using the test files provided
+using the test files provided. We recommend running the SDPRX using 3 threads. It is expected to finish within 45 minutes
 
 ## Summary Statistics
 The summary statistics should at least contain following columns with the same name (order of the column is not important).
