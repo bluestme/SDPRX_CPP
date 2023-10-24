@@ -36,15 +36,14 @@ void print_use()
 	<< " -chr (required) chromsome to work on. Currently support 1-22. Recommend to run in parallel." << endl << endl
 	<< " -N1 (required for -mcmc) GWAS sample size for population 1." << endl
 	<< " -N2 (required for -mcmc) GWAS sample size for population 2." << endl << endl
-	<< " -opt_llk (optional) Which likelihood to evaluate. 1 for vanilla modified likelihood and 2 for SNPs genotyped on different individuals. Please refer to manuscript or manual for more details. Default is 1." << endl << endl
 	<< " -iter (optional) number of iterations for MCMC. Default is 1000." << endl << endl
 	<< " -burn (optional) number of burn-in for MCMC. Default is 200." << endl << endl 
 	<< " -thin (optional) Thinning for MCMC. Default is 1 (no thin). " << endl << endl
 	<< " -n_threads (optional) number of threads to use. Default is 1." << endl << endl
 	<< " -r2 (optional) r2 cut-off for parition of independent blocks. Default is 0.1." << endl << endl
-	<< " -a (optional) factor to shrink the reference LD matrix. Default is 0.1. Please refer to the manual for more information." << endl << endl
-	<< " -c1 (optional) factor to correct for the deflation. Default is 1 for population 1. Please refer to the manual for more information." << endl
-	<< " -c2 (optional) factor to correct for the deflation. Default is 1 for population 2. Please refer to the manual for more information." << endl << endl
+	<< " -a (optional) factor to shrink the reference LD matrix. Default is 0.1." << endl << endl
+	<< " -c1 (optional) factor to correct for the deflation. Default is 1 for population 1." << endl
+	<< " -c2 (optional) factor to correct for the deflation. Default is 1 for population 2." << endl << endl
 	<< " -a0k (optional) hyperparameter for inverse gamma distribution. Default is 0.5." << endl << endl
 	<< " -b0k (optional) hyperparameter for inverse gamma distribution. Default is 0.5." << endl << endl
 	<< " -rho (optional) the correlation between population 1 and 2. Default is 0.8." << endl << endl
