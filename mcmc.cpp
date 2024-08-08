@@ -68,7 +68,15 @@ void MCMC_state::sample_sigma2() // GHY: too easy to be checked
 	cluster_var[0] = 0;
     for (size_t i = 1; i < num_cluster; i++) 
 	{
-		double a = suff_stats[i] / 2.0 + para.a0k;
+		double a;
+		if (i >= population[2])
+		{
+			a = suff_stats[i] + para.a0k;
+		}
+		if (i < population[2])
+		{
+			a = suff_stats[i] / 2.0 + para.a0k;
+		}
 		double b = 1.0 / (sumsq[i] / 2.0 + para.b0k);
 		if (i > population[2])
 		{
